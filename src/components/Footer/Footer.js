@@ -28,9 +28,9 @@ const Footer = ({Footer_ref,Landing_ref,
               <div className='vr'></div>
             <div className='middle_footer'>
                 <div className='footer_icons'><FaPhone /></div>
-                <div>+91 9315839234</div>
-                <div className='footer_icons'><IoMdMail /></div>
-                <div>sales@burjitransformers.com</div>
+                <div className='footer_text'>+91 9315839234</div>
+                <div className='footer_icons footer_icons_middle'><IoMdMail /></div>
+                <div className='footer_text'>sales@bhurjitransformers.com</div>
                 <div className='footer_icons'><FaLocationDot /></div>
                 <div>Ydtig Vihar, Udyog Vihar, Phase I, Plot 107, Dundahera, Gurgaon, Haryana 122001 </div>
            
