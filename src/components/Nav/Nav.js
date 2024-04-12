@@ -54,7 +54,8 @@ const hamburger=document.querySelector('.hamburger_icon_div');
         </div>
 
         <div className='nav_headings'
-        onClick={() => {product_ref.current?.scrollIntoView({behavior:'smooth'})}}
+        onClick={() => {product_ref.current?.scrollIntoView({behavior:'smooth'})}
+      }
         >
           PRODUCTS
            </div>

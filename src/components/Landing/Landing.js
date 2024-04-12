@@ -3,7 +3,7 @@ import './Landing.css'
 import home from '../../assets/home.jpg'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
-const Landing = ({Landing_ref}) => {
+const Landing = ({Landing_ref,product_ref}) => {
   return (
     <div className='Landing' ref={Landing_ref}>
         <div className='landingBg'>
@@ -14,7 +14,8 @@ const Landing = ({Landing_ref}) => {
         <div className='landinghead1'>BHURJI</div>
         <div className='landinghead2'>ELECTRONICS.</div>
         <div className='landingseeMore'>
-            <div>SEE MORE <FaLongArrowAltRight /></div>
+            <div className='landingseeMore_button' onClick={() => {product_ref.current?.scrollIntoView({behavior:'smooth'})}
+      }>SEE MORE <FaLongArrowAltRight /></div>
         </div>
         <div className='landingText'>LEADING <br /> MANUFACTURERS OF <br /> OEM TRANSFORMERS</div>
     </div>

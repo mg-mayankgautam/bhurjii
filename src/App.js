@@ -30,7 +30,7 @@ function App() {
         product_ref={product_ref}
         clients_ref={clients_ref}
         Footer_ref={Footer_ref}/>
-      <Landing Landing_ref={Landing_ref}/>
+      <Landing Landing_ref={Landing_ref}  product_ref={product_ref}/>
       <About about_ref={about_ref}/>
       <Product product_ref={product_ref}/>
       <Clients  clients_ref={clients_ref}/>

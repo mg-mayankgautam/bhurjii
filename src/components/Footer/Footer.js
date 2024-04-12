@@ -9,8 +9,7 @@ import Line from '../Line/Line'
 const Footer = ({Footer_ref,Landing_ref,
   about_ref,product_ref,clients_ref}) => {
 
-    const branchLoc =
-    "https:www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.8531276422536!2d77.07852630948206!3d28.51406628935215!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d195e6bab49af%3A0x1811861102395ade!2sUdyog%20Vihar%2C%20Phase%20I%2C%20Dundahera%20Village%2C%20Sector%2020%2C%20Gurugram%2C%20Haryana%20122022!5e0!3m2!1sen!2sin!4v1711625375791!5m2!1sen!2sin";
+    const branchLoc = process.env.REACT_APP_MAP
 
   return (
     <div className='Footer' ref={Footer_ref}>
@@ -55,7 +54,7 @@ const Footer = ({Footer_ref,Landing_ref,
         <div className='location_image_div_mobile'>
           <div>
               <iframe
-                src={branchLoc}
+                src={process.env.REACT_APP_MAP}
                 style={{ border: 0 }}
                 id="map"
                 allowFullScreen=""

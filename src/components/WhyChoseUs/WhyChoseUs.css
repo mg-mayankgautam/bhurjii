@@ -30,16 +30,14 @@
     .WhyChoseUs_content{
         /* display: grid; */
         grid-template-columns: 1fr;
-        /* justify-items: center; */
-        /* align-items: center; */
-        /* padding: 0 60px;
-        font-size: 18px;
-        color: white;
-        gap: 50px;
-        text-align: justify; */
     }
-   .why_chose_us_text{font-size: 15px;}
-
+   .why_chose_us_text{
+    font-size: 15px;
+    order: 1;
+    }
+    .plant_div{
+        order: 2;
+    }
 }
 
 @media only screen and (max-width:600px){
@@ -49,12 +47,6 @@
     .WhyChoseUs_content{
         /* display: grid; */
         grid-template-columns: 1fr;
-        /* align-items: center;
-        padding: 0 60px;
-        font-size: 18px;
-        color: white;
-        gap: 50px;
-        text-align: justify; */
         gap: 10px;
     }
    .plant{height: 300px;}

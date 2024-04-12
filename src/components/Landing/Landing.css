@@ -51,6 +51,10 @@
     z-index: 1;
 }
 
+.landingseeMore_button:hover{
+    cursor: pointer;
+}
+
 .landingText{
     font-size: 25px;
     margin: 20px 40px;
