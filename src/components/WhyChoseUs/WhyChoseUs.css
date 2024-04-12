@@ -51,6 +51,10 @@
     }
    .plant{height: 300px;}
    .why_chose_us_text{font-size: 12px;}
+   .heading{margin-bottom: 10px;}
+   .WhyChoseUs{
+    min-height: 60vh;
+    }
 
 }
 
