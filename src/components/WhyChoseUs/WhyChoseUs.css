@@ -1,0 +1,64 @@
+.WhyChoseUs{
+    min-height: 100vh;
+}
+
+.plant_div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.plant{
+    height:400px;
+    object-fit: cover;
+}
+
+.WhyChoseUs_content{
+    display: grid;
+    grid-template-columns: 3.5fr 6.5fr;
+    align-items: center;
+    justify-content: center;
+    padding: 0 60px;
+    font-size: 18px;
+    color: white;
+    gap: 50px;
+    text-align: justify;
+    margin-top: 40px;
+}
+
+@media only screen and (max-width:800px){
+    .WhyChoseUs_content{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* justify-items: center; */
+        /* align-items: center; */
+        /* padding: 0 60px;
+        font-size: 18px;
+        color: white;
+        gap: 50px;
+        text-align: justify; */
+    }
+   .why_chose_us_text{font-size: 15px;}
+
+}
+
+@media only screen and (max-width:600px){
+    .WhyChoseUs{
+
+    }
+    .WhyChoseUs_content{
+        /* display: grid; */
+        grid-template-columns: 1fr;
+        /* align-items: center;
+        padding: 0 60px;
+        font-size: 18px;
+        color: white;
+        gap: 50px;
+        text-align: justify; */
+        gap: 10px;
+    }
+   .plant{height: 300px;}
+   .why_chose_us_text{font-size: 12px;}
+
+}
+

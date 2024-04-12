@@ -1,0 +1,137 @@
+.Nav{
+display: grid;
+grid-template-columns: 0.6fr 4fr 0.6fr 0.7fr 0.9fr 1fr 1fr;
+/* grid-template-columns: 1fr 4fr repeat(5, auto); */
+height: 10vh;
+background-color: rgb(58, 58, 58);
+justify-content: center;
+align-items: center;
+position: absolute;
+top: 0;
+width: 100%;
+color: white;
+font-size: 14px;
+font-weight: 800;
+z-index: 5;
+/* padding-left:27px;
+padding-right:27px; */
+/* padding-bottom:15px;
+padding-top:15px; */
+}
+
+.nav_logo{height: 50px;
+
+
+}
+
+.nav_main_heading{
+    letter-spacing: 2.5px;
+}
+.hamburger_icon_div{display:none;}
+.nav_logo_div{
+    justify-self: center;
+    align-self: center;
+    
+}
+
+.mobile_nav{display: none ;
+
+}
+
+
+
+.mobile_nav{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    justify-content: flex-end;
+    gap: 5px;
+    /* z-index: 10; */
+    background-color: #000000c7;
+    height: 100vh;
+}
+
+.nav_headings{justify-self: center;}
+
+.mobile_nav_child{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: flex-start;
+    background-color: rgb(240, 240, 240);
+    width: 300px;
+    color: black;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+.mobile_nav_cross{
+    margin: 20px;
+    /* font-weight: 800; */
+}
+
+.nav_headings:hover{
+cursor: pointer;
+text-decoration: underline;
+
+}
+.mobile_nav_headings{
+    font-size: 20px;
+    text-align: left;
+    padding: 20px;
+    /* margin-left: ; */
+    border-bottom: 1px solid #ffffff;
+}
+
+.mobile_nav_headings:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.hamburger_icon_hide{
+    display: none;
+}
+    
+.hamburger_icon_img{
+    font-size: 40px;
+}
+
+/* @media only screen and (orientation: portrait) { */
+
+@media only screen and (max-width:850px){
+    .Nav{
+        grid-template-columns: 0.6fr 2fr 0.6fr 0.7fr 0.9fr 1fr 1fr;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .Nav{display: grid;
+        grid-template-columns: 0.4fr 1fr 0.2fr;
+
+        /* background-color: red; */
+        }
+
+        .nav_logo_div{
+            justify-self: left;
+        }
+       .nav_headings{
+        display: none;
+       } 
+
+       .hamburger_icon_div{
+
+        justify-self: right;
+        display: flex;
+        justify-content: center;
+        margin-right: 20px;
+       }
+       .mobile_nav_show{display: flex;     
+        }
+       .nav_logo_div{margin-left:20px ;}
+       .nav_logo{height: 60px;} 
+
+       
+}
+
+

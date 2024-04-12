@@ -1,0 +1,56 @@
+.GlobalPresence{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mapDiv{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+}
+
+.map{
+    /* width: 80vw; */
+        object-fit: cover;
+        height: 80vh;
+    width: 100%;
+}
+
+
+@media only screen and (max-width:980px){
+    
+    .map{
+       object-position: right;
+       /* transform: scale(1.2) translateX(-150px); */
+    }
+
+    .mapDiv{
+        /* width: 850px; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+
+    }
+}
+
+@media only screen and (max-width:600px){
+    
+    .map{
+        /* object-fit: cover; */
+       object-position: 80%;
+       width: 90%;
+       /* height: 70vh; */
+       /* margin: 10px; */
+    }
+
+    .mapDiv{
+        /* width: 500px; */
+        overflow-x: hidden;
+        overflow-y: hidden;
+
+
+    }
+}
