@@ -74,11 +74,28 @@ const hamburger=document.querySelector('.hamburger_icon_div');
       <div className='mobile_nav' >
         <div className='mobile_nav_cross' onClick={()=>{navside.classList.remove('mobile_nav_show');hamburger.classList.remove('hamburger_icon_hide')}}><RxCross1 /></div>
         <div className='mobile_nav_child'>
-        <div className='mobile_nav_headings'>HOME</div>
-        <div className='mobile_nav_headings'>ABOUT</div>
-        <div className='mobile_nav_headings'>PRODUCTS</div>
-        <div className='mobile_nav_headings'>OUR CLIENTS</div>
-        <div className='mobile_nav_headings'>CONTACT US</div>  
+        <div className='mobile_nav_headings' onClick={() => {Landing_ref.current?.scrollIntoView({behavior:'smooth'})}}>
+          HOME
+        </div>
+
+        <div className='mobile_nav_headings' onClick={() => {about_ref.current?.scrollIntoView({behavior:'smooth'})}}>
+          ABOUT
+        </div>
+
+        <div className='mobile_nav_headings'
+        onClick={() => {product_ref.current?.scrollIntoView({behavior:'smooth'})}
+      }
+        >
+          PRODUCTS
+           </div>
+
+        <div className='mobile_nav_headings' onClick={() => {clients_ref.current?.scrollIntoView({behavior:'smooth'})}}>
+          OUR CLIENTS
+        </div>
+
+        <div className='mobile_nav_headings'  onClick={() => {Footer_ref.current?.scrollIntoView({behavior:'smooth'})}}>
+          CONTACT US
+        </div>     
         </div>
       </div>
 
