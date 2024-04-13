@@ -31,7 +31,9 @@ padding-top:15px; */
 .nav_logo_div{
     justify-self: center;
     align-self: center;
-    
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .mobile_nav{display: none ;

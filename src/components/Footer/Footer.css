@@ -41,6 +41,14 @@
 
 .footer_icons{
     justify-self: center;
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_text{
+    align-self: center;
 }
 
 .quick_links{
