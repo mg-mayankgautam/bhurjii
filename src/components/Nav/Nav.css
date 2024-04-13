@@ -54,7 +54,7 @@ padding-top:15px; */
     background-color: #000000c7;
     height: 100vh;
     height: 100dvh;
-    height: 100svh;
+    height: 100lvh;
 }
 
 .nav_headings{justify-self: center;}
