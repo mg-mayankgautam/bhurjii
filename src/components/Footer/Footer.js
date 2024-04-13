@@ -27,7 +27,7 @@ const Footer = ({Footer_ref,Landing_ref,
                 <div className='footer_icons'><IoMdMail /></div>
                 <div className='footer_text'>sales@bhurjitransformers.com</div>
                 <div className='footer_icons'><FaLocationDot /></div>
-                <div className='footer_text'>Plot No. 107, Udyog Vihar, Phase - 1, Dundahera, Gurugram - 122016, Haryana</div>
+                <div className='footer_text'>Plot No. 107, Udyog Vihar, Phase - 1, Dundahera, <br/> Gurugram - 122016, Haryana</div>
            
             </div>
 
