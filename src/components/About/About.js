@@ -15,7 +15,7 @@ const About = ({about_ref}) => {
                  <br /><br />
             With the futuristic approach towards innovation and research, Bhurji Electronics led the markets as the first F.R. Transformers developers. We have successfully delivered constant voltage transformers to multiple governmental organizations and OEM’s such as The Indian Railways, Ministry of Finance, Income Tax Department, HCL Limited, WIPRO Limited and SIEMENS Limited.
             <br /><br />
-            Today we have a complete backward manufacturing facility in Gurugram, India which holds the capabilities to facilitate progressive tools, die requirements for lamination cutting and punching and developing transformer clamps, studs and housing cabinets for its captive usage, as well.</div>
+            Today we have a complete backward integration cum manufacturing facility in Gurugram, India which holds the capabilities to facilitate progressive tools, die requirements for lamination cutting and punching and developing transformer clamps, studs and housing cabinets for its captive usage, as well.</div>
             <div className='about_img_div'><img className='about_img' src={about_img} /></div>
         </div>
     </div>
