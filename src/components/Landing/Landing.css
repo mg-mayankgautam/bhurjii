@@ -50,7 +50,12 @@
     font-size: 11px;
     z-index: 1;
 }
-
+.landingseeMore_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 .landingseeMore_button:hover{
     cursor: pointer;
 }
@@ -120,5 +125,11 @@
         width: 100%;
         object-position: right; */
         opacity: 30%;
+    }
+}
+
+@media only screen and (max-width: 390px){
+    .landinghead2{
+        font-size: 40px;
     }
 }

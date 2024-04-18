@@ -16,7 +16,7 @@
 
 .FooterContent{
     display: grid;
-    grid-template-columns: 1fr 0.15fr 1.9fr  0.15fr 1fr;
+    grid-template-columns: 1fr 0.15fr 2fr 0.15fr 1.5fr;
     justify-items: center;
     align-items: center;
     padding: 0 30px;
@@ -65,9 +65,9 @@
 
 .vr{width: 2px;height: 100px; background-color: aliceblue;}
 
-.vr.vr_right{justify-self:start;
-
-}
+/* .vr.vr_right{
+    justify-self:start;
+} */
 
 @media only screen and (max-width:800px){
     
@@ -105,7 +105,7 @@
     gap: 20px; */
 }
 .location_image_div_mobile{
-width: 100vw;
+/* width: 100vw; */
 display: flex;
 justify-content: center;
 align-items: center;

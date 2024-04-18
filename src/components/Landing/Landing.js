@@ -15,7 +15,7 @@ const Landing = ({Landing_ref,product_ref}) => {
         <div className='landinghead2'>ELECTRONICS.</div>
         <div className='landingseeMore'>
             <div className='landingseeMore_button' onClick={() => {product_ref.current?.scrollIntoView({behavior:'smooth'})}
-      }>SEE MORE <FaLongArrowAltRight /></div>
+      }>SEE MORE <FaLongArrowAltRight className='scrollBtn'/> </div>
         </div>
         <div className='landingText'>LEADING <br /> MANUFACTURERS OF <br /> OEM TRANSFORMERS</div>
     </div>

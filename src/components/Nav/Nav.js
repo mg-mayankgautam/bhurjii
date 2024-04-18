@@ -26,7 +26,7 @@ const Nav = ({ Landing_ref,
 
   useEffect(()=>{
     const check = document.querySelector('.mobile_nav_show');
-    console.log(check)
+    // console.log(check)
     if(check){
         document.body.style.overflow = 'hidden';
     }

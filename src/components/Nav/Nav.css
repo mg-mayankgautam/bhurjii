@@ -98,7 +98,7 @@ text-decoration: underline;
 }
     
 .hamburger_icon_img{
-    font-size: 40px;
+    font-size: 30px;
 }
 
 /* @media only screen and (orientation: portrait) { */
@@ -110,21 +110,19 @@ text-decoration: underline;
 }
 
 @media only screen and (max-width:600px){
-    .Nav{display: grid;
+    .Nav{
+        display: grid;
         grid-template-columns: 0.4fr 1fr 0.2fr;
-
-        /* background-color: red; */
         }
 
         .nav_logo_div{
             justify-self: left;
         }
        .nav_headings{
-        display: none;
+            display: none;
        } 
 
        .hamburger_icon_div{
-
         justify-self: right;
         display: flex;
         justify-content: center;

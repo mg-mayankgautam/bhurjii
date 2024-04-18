@@ -40,3 +40,19 @@
   /* .about_content{grid-template-columns: 1fr;} */
          
   }
+
+.scrollBtnDiv{
+  position: fixed;
+  bottom: 10%;
+  right: 5%;
+  background-color: white;
+  padding: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+}
+.scrollBtn{
+  font-size: 30px;
+  cursor: pointer;
+}
