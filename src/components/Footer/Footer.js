@@ -47,7 +47,7 @@ const Footer = ({Footer_ref,Landing_ref,
         <div className='footerCopyright'>
         ©2024 BHURJI ELECTRONICS, ALL RIGHTS RESERVED
         <br />
-        <a href="https://www.thefuelmedia.co">DESIGNED BY THE FUEL MEDIA</a>
+        <a href="https://www.thefuelmedia.co" target='_blank'>DESIGNED BY THE FUEL MEDIA</a>
         </div>
     </div>
   )
