@@ -90,7 +90,10 @@ const Product = ({ product_ref}) => {
               <img src={eleven}/>
               <div className='producthover' style={style11}>
                 <div>
-                <span className='bold'>AC Stabilizer</span><br/> <span className='bold'>1 Ton AC: </span>130V-290V <br/> <span className='bold'> 1.5 Ton AC: </span>90V-290V, 130V-290V, 150V-285V, 170V-270V <br/> <span className='bold'>2 Ton AC: </span>90V-290V, 130V-290V, 150V-285V
+                <span className='bold'>AC Stabilizer</span><br/>
+                <div className='ACsubtext'>
+                  <span className='ACbold'>1 Ton AC: </span>130V-290V <br/> <span className='ACbold'> 1.5 Ton AC: </span>90V-290V, 130V-290V, 150V-285V, 170V-270V <br/> <span className='ACbold'>2 Ton AC: </span>90V-290V, 130V-290V, 150V-285V
+                </div>
                 </div>
               </div>
             </div>

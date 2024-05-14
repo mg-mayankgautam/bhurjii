@@ -45,14 +45,16 @@
   position: fixed;
   bottom: 10%;
   right: 5%;
-  background-color: white;
+  background-color: #0067AC;
   padding: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50px;
+  box-shadow: 2px 2px 16px 0px rgba(0, 0, 0, 0.5);         
 }
 .scrollBtn{
   font-size: 30px;
   cursor: pointer;
+  color: white;
 }

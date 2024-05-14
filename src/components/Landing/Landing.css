@@ -101,7 +101,7 @@
         z-index: 1;
     }
     .landinghead2{
-        font-size: 50px;
+        font-size: 66px;
         margin: 0 16px;
         z-index: 1;
         font-weight: 800;
@@ -129,8 +129,8 @@
     }
 }
 
-@media only screen and (max-width: 390px){
+/* @media only screen and (max-width: 390px){
     .landinghead2{
         font-size: 40px;
     }
-}
+} */
