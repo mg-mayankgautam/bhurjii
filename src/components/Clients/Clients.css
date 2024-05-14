@@ -5,22 +5,33 @@
     flex-direction: column;
     /* justify-content: center; */
     /* align-items: center; */
-    padding-top: 100px;
+    padding: 100px 0;
 }
 
 
 .client_logos_div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: auto auto auto auto;
+    row-gap: 15px;
     justify-content: center;
     margin-top: 40px;
 }
 
 .client_logos_img{
-    width:250px; 
+    object-fit: cover;
+    /* height: 100%;
+    width: 100%; */
+    /* min-width:100px;  */
+    /* max-width: 200px; */
+    /* min-height: 80px;
+    max-height: 80px; */
+    width: 250px;
 }
 
 .client_logos{
+    /* height: 100%;
+    width: 100%; */
     justify-self: center;
     align-self: center;
 }
@@ -88,7 +99,7 @@
     .client_logos_div{
         margin-top: 50px;
         display: grid;
-        grid-template-rows: 100px 100px 100px 100px 80px 100px;
+        grid-template-rows: auto;
         justify-content: center;
     }  
 

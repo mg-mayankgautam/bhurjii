@@ -6,42 +6,54 @@
 .productGrid{
     display: grid;
     grid-template-columns: 400px 400px;
-    grid-template-rows: repeat(4, 230px);
+    /* grid-template-rows: repeat(4, 400px); */
     /* justify-items: center;
     align-items: center; */
     justify-content: center;
     gap: 20px;
     margin: 40px 100px;
 }
+.OddProductsGrid{
+    display: grid;
+    justify-content: center;
+    gap: 20px;
+    grid-template-rows: 400px 460px 300px 460px 400px 300px 300px 300px;
+}
+.EvenProductsGrid{
+    justify-content: center;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: 350px 300px 300px 460px 400px 460px 350px 300px;
+}
 .products{
     height: 100%;
     width: 100%;
     position: relative;
 }
-.productGrid>div>img{
+.productGrid>div>div>img{
     object-fit: cover;
     height: 100%;
     width: 100%;
     object-position: bottom;
 }
-.product1{
+/* .product1{
     grid-row: 1/3;
 }
 .product6{
     grid-row: 3/5;
     grid-column: 2/3;
-}
+} */
 .producthover{
     position: absolute;
     cursor: pointer;
-    height: 100%;
+    height: 97.5%;
     width: 95%;
     background-color: #000000d7;
     color: white;
     top: 0%;
     display: flex;
     flex-direction: column;
-    gap: 15px;
+    /* gap: 15px; */
     align-items: center;
     justify-content: center;
     border: 1.5px solid #569dff;
@@ -49,21 +61,27 @@
     text-align: center;
     padding: 2.5% 2.5% 0;
     font-size: 20px;
+    font-weight: 400;
+}
+.bold{
     font-weight: 700;
 }
 
 @media only screen and (max-width: 950px){
     .productGrid{
         grid-template-columns: 400px;
-        grid-template-rows: repeat(6, 400px);
+        /* grid-template-rows: repeat(6, 400px); */
     }
-    .product1{
+    .OddProductsGrid, .EvenProductsGrid{
+        grid-template-rows: repeat(8, auto);
+    }
+    /* .product1{
         grid-row: 1/2;
-    }
-    .product6{
+    } */
+    /* .product6{
         grid-row: 6/7;
         grid-column: 1/2;
-    }
+    } */
     .productGrid>div>img{
         object-fit: cover;
         height: 100%;
