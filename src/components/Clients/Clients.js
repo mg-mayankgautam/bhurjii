@@ -30,6 +30,8 @@ const Clients = ({clients_ref}) => {
         <div className='client_logos' ><img className='client_logos_img' src={exide}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={smarten}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={genus}  /></div>
+      </div>
+      <div className='client_logos_div2'>
         <div className='client_logos' ><img className='client_logos_img' src={sukam}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={neptune}  /></div>
       </div>

@@ -13,6 +13,7 @@ color: white;
 font-size: 14px;
 font-weight: 800;
 z-index: 5;
+font-family: navFont;
 /* padding-left:27px;
 padding-right:27px; */
 /* padding-bottom:15px;
@@ -112,7 +113,7 @@ text-decoration: underline;
 @media only screen and (max-width:600px){
     .Nav{
         display: grid;
-        grid-template-columns: 0.4fr 1fr 0.2fr;
+        grid-template-columns: 90px 1fr 0.2fr;
         }
 
         .nav_logo_div{

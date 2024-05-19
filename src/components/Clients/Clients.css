@@ -12,10 +12,19 @@
 .client_logos_div{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: auto auto auto auto;
-    row-gap: 15px;
+    grid-template-rows: auto;
+    row-gap: 64px;
     justify-content: center;
     margin-top: 40px;
+}
+
+.client_logos_div2{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto;
+    row-gap: 64px;
+    justify-content: center;
+    margin-top: 64px;
 }
 
 .client_logos_img{
@@ -45,11 +54,14 @@
     
     .client_logos_div{
         margin-top: 20px;
-        margin-bottom: 20px;
         display: grid;
         grid-template-columns: 1fr;
         justify-content: center;
     }  
+    .client_logos_div2{
+        grid-template-columns: 1fr;
+        margin-bottom: 20px;
+    }
 
     .client_logos_img{
         width:225px; 

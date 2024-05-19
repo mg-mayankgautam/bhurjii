@@ -16,7 +16,7 @@
     position: absolute;
     height: 100vh;
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 41% 59%;
     width: 100%;
 }
 .bgImgDiv{
@@ -26,17 +26,17 @@
     object-fit: cover;
     height: 100%;
     width: 100%;
-    object-position: right;
+    /* object-position: right; */
     opacity: 50%;
 }
 .landinghead1{
-    font-size: 48.6px;
+    font-size: 48px;
     margin: 0 40px;
     z-index: 1;
 }
 .landinghead2{
     font-size: 150px;
-    margin: 0 36px;
+    margin: 0 34px;
     z-index: 1;
     font-weight: 800;
     line-height: 1;
@@ -48,8 +48,9 @@
     padding: 0 40px;
     display: flex;
     align-items: center;
-    font-size: 11px;
+    font-size: 13px;
     z-index: 1;
+    font-family: navFont;
 }
 .landingseeMore_button{
     display: flex;
@@ -73,12 +74,12 @@
     
 
     .landinghead1{
-        font-size: 60px;
+        /* font-size: 48px; */
         margin: 0 20px;
         z-index: 1;
     }
     .landinghead2{
-        font-size: 80px;
+        font-size: 110px;
         margin: 0 16px;
         z-index: 1;
         font-weight: 800;
@@ -89,6 +90,9 @@
     }
     .bgColor{display: none;}
        
+    .bgImg{
+        opacity: 30%;
+    }
     
 }
 
@@ -115,18 +119,9 @@
     
 
     .landingseeMore{
-       
        margin-top: 100px;
-        
     }
 
-    .bgImg{
-        /* object-fit: cover;
-        height: 100%;
-        width: 100%;
-        object-position: right; */
-        opacity: 30%;
-    }
 }
 
 /* @media only screen and (max-width: 390px){
