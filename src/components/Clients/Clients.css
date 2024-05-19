@@ -23,8 +23,10 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto;
     row-gap: 64px;
+    column-gap: 150px;
     justify-content: center;
-    margin-top: 64px;
+    justify-items: center;
+    margin: 64px auto 0;
 }
 
 .client_logos_img{
