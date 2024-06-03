@@ -58,7 +58,7 @@ const Product = ({ product_ref}) => {
               <div className='producthover' style={style3}>
                 <div>
                 <span className='bold'>3 Phase Constant Voltage Transformer </span><br />
-                (upto 15kW)
+                (upto 15KW)
               </div>
               </div>
             </div>
@@ -66,7 +66,7 @@ const Product = ({ product_ref}) => {
               <img src={five}/>
               <div className='producthover' style={style5}>
                 <div>
-                <span className='bold'>1 Phase Constant Voltage Transformer </span><br/> (300W - 5kW)
+                <span className='bold'>1 Phase Constant Voltage Transformer </span><br/> (300W - 5KW)
               </div>
               </div>
             </div>
@@ -81,9 +81,10 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle9({display: 'flex'}); }}onMouseLeave={e => { setStyle9({display: 'none'})}}>
               <img src={nine}/>
               <div className='producthover' style={style9}>
-                <div className='bold'>
-                Capacitive Voltage Transformer
-              </div>
+                <div>
+                  <span className='bold'>Constant Voltage Transformer</span><br/> (without cabinet)
+                </div>
+               
               </div>
             </div>
             <div className='products' onMouseEnter={e => { setStyle11({display: 'flex'}); }}onMouseLeave={e => { setStyle11({display: 'none'})}}>
@@ -109,7 +110,7 @@ const Product = ({ product_ref}) => {
               <img src={fifteen}/>
               <div className='producthover' style={style15}>
                 <div>
-                <span className='bold'>CVT Stabilizer</span><br/> For LED TVs upto 55" Panel & 75" Panel/ Home Theater/ Music System
+                <span className='bold'>CVT Stabilizer</span><br/> For LED TVs upto 55" Panel & 75" Panel/ Home Theater/ Music System/ Petrol Pump Station
               </div>
               </div>
             </div>
@@ -136,7 +137,7 @@ const Product = ({ product_ref}) => {
               <img src={six}/>
               <div className='producthover' style={style6}>
                 <div>
-                <span className='bold'>Isolation Transformer </span><br/> (1 Phase - upto 30kW <br/> 3 Phase - upto 300kW)
+                <span className='bold'>Isolation Transformer </span><br/> (1 Phase - upto 30KW <br/> 3 Phase - upto 300KW)
               </div>
               </div>
             </div>
@@ -144,7 +145,7 @@ const Product = ({ product_ref}) => {
               <img src={eight}/>
               <div className='producthover' style={style8}>
                 <div>
-                <span className='bold'>1 Phase Inverter Transformer </span><br/> (upto 250kW)
+                <span className='bold'>1 Phase Inverter Transformer </span><br/> (upto 250KW)
               </div>
               </div>
             </div>
@@ -152,7 +153,7 @@ const Product = ({ product_ref}) => {
               <img src={ten}/>
               <div className='producthover' style={style10}>
                 <div>
-                <span className='bold'>3 Phase Inverter Transformer </span><br/> (upto 250kW)
+                <span className='bold'>3 Phase Inverter Transformer </span><br/> (upto 250KW)
               </div>
               </div>
             </div>
@@ -160,7 +161,7 @@ const Product = ({ product_ref}) => {
               <img src={twelve}/>
               <div className='producthover' style={style12}>
                 <div className='bold'>
-                Zig - Zag Transformer
+                3 Phase Zig - Zag Transformer
               </div>
               </div>
             </div>

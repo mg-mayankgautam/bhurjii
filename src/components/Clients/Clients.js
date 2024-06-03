@@ -11,6 +11,7 @@ import smarten from '../../assets/smarten.jpg'
 import genus from '../../assets/genus.png'
 import sukam from '../../assets/sukam.png'
 import neptune from '../../assets/neptune.png'
+import invertek from '../../assets/invertek.webp'
 import Line from '../Line/Line'
 
 const Clients = ({clients_ref}) => {
@@ -30,10 +31,12 @@ const Clients = ({clients_ref}) => {
         <div className='client_logos' ><img className='client_logos_img' src={exide}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={smarten}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={genus}  /></div>
-      </div>
-      <div className='client_logos_div2'>
         <div className='client_logos' ><img className='client_logos_img' src={sukam}  /></div>
         <div className='client_logos' ><img className='client_logos_img' src={neptune}  /></div>
+        <div className='client_logos' ><img className='client_logos_img' src={invertek}  /></div>
+      </div>
+      <div className='client_logos_div2'>
+        
       </div>
     </div>
   )
