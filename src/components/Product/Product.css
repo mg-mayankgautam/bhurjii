@@ -66,6 +66,7 @@
 .bold{
     font-weight: 700;
     font-size: 20px;
+    text-transform: uppercase;
 }
 .ACbold{
     font-weight: 700;
@@ -74,6 +75,109 @@
 .ACsubtext{
     text-align: left;
 }
+
+
+.ModalContainer{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000000a8;
+    color: white;
+    z-index: 5;
+}
+
+.ModalParent{
+    border: 1.5px solid #ffffff;
+    background-color: #000000cb;
+}
+
+.Modal{
+    /* padding: 16px; */
+    display: grid;
+    overflow: scroll;
+    max-height: 400px;
+    max-width: 800px;
+}
+
+.Modal.four{
+    grid-template-columns: 160px 180px 180px;
+}
+
+.Modal::-webkit-scrollbar{display: none;}
+
+.closeModal{
+    position: absolute;
+    top: 4px;
+    right: 16px;
+    border: none !important;
+    z-index: 16;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.Modal>div{
+    border-style: solid;
+    border-color: #ffffff49;
+    border-width: 0.5px;
+    padding: 8px 16px;
+}
+
+.modalHead{
+    border-style: solid;
+    border-color: #ffffff49;
+    border-width: 0.5px;
+    text-align: center;
+    color: #ffffff;
+    padding: 4px 32px 8px;
+    background-color: #000000;
+    z-index: 14;
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.model{
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 600;
+    position: sticky;
+    top: 0px;
+    background-color: #000000;
+    z-index: 12;
+    text-align: center;
+}
+
+.specs{
+    color: #ffffff ;
+    font-weight: 500 ;
+    position: sticky;
+    left: 0;
+    background-color: #000000;
+    z-index: 11;
+    font-size: 14px;
+}
+
+.specs.model{
+    z-index: 13;
+    text-align: left;
+    font-weight: 600;
+    font-size: inherit;
+}
+
+.data{
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    color: #cacaca;
+}
+
 
 @media only screen and (max-width: 950px){
     .productGrid{
@@ -95,6 +199,9 @@
         height: 100%;
         width: 100%;
         /* object-position: center; */
+    }
+    .Modal{
+        max-width: 600px;
     }
 }
 
@@ -136,5 +243,11 @@
     }
     .ACbold{
         font-size: 14px;
+    }
+    .ModalParent{
+        width: 80%;
+    }
+    .Modal{
+        max-width: 100%;
     }
 }
