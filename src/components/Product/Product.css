@@ -266,8 +266,19 @@
         max-width: 100%;
         font-size: 14px;
     }
+    .Modal.four{
+        grid-template-columns: 150px 180px 180px;
+    }
+    
+    .Modal.eleven{
+        grid-template-columns: 150px repeat(8,180px);
+    }
+    
+    .Modal.fifteen{
+        grid-template-columns: 150px 200px 200px;
+    }
     .Modal.fourteen{
-        grid-template-columns: 160px auto;
+        grid-template-columns: 150px auto;
     }
     .modalHead{
         font-size: 16px;
