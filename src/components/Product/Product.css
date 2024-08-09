@@ -108,6 +108,10 @@
     grid-template-columns: 160px 180px 180px;
 }
 
+.Modal.eleven{
+    grid-template-columns: 160px repeat(8,180px);
+}
+
 .Modal::-webkit-scrollbar{display: none;}
 
 .closeModal{
@@ -244,10 +248,21 @@
     .ACbold{
         font-size: 14px;
     }
+
     .ModalParent{
         width: 80%;
     }
     .Modal{
         max-width: 100%;
+        font-size: 14px;
+    }
+    .modalHead{
+        font-size: 18px;
+    }
+    .specs{
+        font-size: 12px;
+    }
+    .data{
+        font-size: 12px;
     }
 }

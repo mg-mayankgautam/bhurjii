@@ -39,6 +39,7 @@ const Product = ({ product_ref}) => {
 
   const [modal4, setModal4] = useState(false);
   const [modal6, setModal6] = useState(false);
+  const [modal11, setModal11] = useState(false);
 
 
 
@@ -98,7 +99,9 @@ const Product = ({ product_ref}) => {
               </div>
             </div>
 
-            <div className='products' onMouseEnter={e => { setStyle11({display: 'flex'}); }}onMouseLeave={e => { setStyle11({display: 'none'})}}>
+            <div className='products' onMouseEnter={e => { setStyle11({display: 'flex'}); }}onMouseLeave={e => { setStyle11({display: 'none'})}}
+              onClick={()=> setModal11(true)}  
+            >
               <img src={eleven}/>
               <div className='producthover' style={style11}>
                 <div>
@@ -383,6 +386,137 @@ const Product = ({ product_ref}) => {
             <div className='specs'>Metering</div>
             <div className='data'>-</div>
             <div className='data'>Conforming to customer requirement / request</div>
+
+          </div>
+        </div>
+      </div>
+
+    : null}
+
+
+    {modal11?
+
+      <div className='ModalContainer'>
+        <div className='ModalParent'>
+          <div className='modalHead'>
+            <div>AC Stabilizer</div>
+            <div className='closeModal'
+              onClick={()=> setModal11(false)}>
+              X
+            </div>
+          </div>
+
+          <div className='Modal eleven'>
+
+            <div className='specs model'>Specifications</div>
+            <div className='model'>bel-3130</div>
+            <div className='model'>bel-4090</div>
+            <div className='model'>bel-4130</div>
+            <div className='model'>bel-4150</div>
+            <div className='model'>bel-4170</div>
+            <div className='model'>bel-5090</div>
+            <div className='model'>bel-5130</div>
+            <div className='model'>bel-5150</div>
+
+            <div className='specs'>Application</div>
+            <div className='data'>One Air Conditioner (Up to 1 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 1.5 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 1.5 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 1.5 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 1.5 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 2.0 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 2.0 TON)</div>
+            <div className='data'>One Air Conditioner (Up to 2.0 TON)</div>
+
+            <div className='specs'>Working Range</div>
+            <div className='data'>130V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>90V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>130V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>150V - 285V AC, 1PH. 50Hz</div>
+            <div className='data'>170V - 270V AC, 1PH. 50Hz</div>
+            <div className='data'>90V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>130V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>150V - 285V AC, 1PH. 50Hz</div>
+
+            <div className='specs'>Output Voltage</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+
+            <div className='specs'>Time Delay</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+
+            <div className='specs'>Advance Digital Display</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>L.E.D- 2 No.s (1 for Mains, 1 for output)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+
+            <div className='specs'>Low Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if below 130V</div>
+            <div className='data'>Provided, for Mains Supply if below 90V</div>
+            <div className='data'>Provided, for Mains Supply if below 130V</div>
+            <div className='data'>Provided, for Mains Supply if below 150V</div>
+            <div className='data'>Provided, for Mains Supply if below 170V (L.E.D Output glow Red)</div>
+            <div className='data'>Provided, for Mains Supply if below 90V</div>
+            <div className='data'>Provided, for Mains Supply if below 130V</div>
+            <div className='data'>Provided, for Mains Supply if below 150V</div>
+
+            <div className='specs'>High Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 285V</div>
+            <div className='data'>Provided, for Mains Supply if above 270V (L.E.D Output glow Red)</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 285V</div>
+
+            <div className='specs'>Auto Start Facility</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+
+            <div className='specs'>Wall Mounting</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+            <div className='data'>Yes</div>
+
+            <div className='specs'>Warranty</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
 
           </div>
         </div>
