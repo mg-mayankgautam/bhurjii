@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React, {useEffect, useState} from 'react'
 import './Product.css'
 import one from '../../assets/1-customized-transformer.png';
 import two from '../../assets/2-power-transformer.png'
@@ -7,7 +7,7 @@ import four from '../../assets/4-detuned-reactor.png'
 import five from '../../assets/5-1 phx Constant Voltage Transformer.png'
 import six from '../../assets/6-Isolation Transformer.png'
 import seven from '../../assets/7-1 phx Choke.png'
-import eight from '../../assets/8-1 phx Inverter Transformer.png'
+import eight from '../../assets/1 phx inverter transformer.png'
 import nine from '../../assets/9-CVT Transformer.png'
 import ten from '../../assets/10-3 phx Inverter Transformer.png'
 import eleven from '../../assets/11-AC Stabilizer.png'
@@ -40,6 +40,24 @@ const Product = ({ product_ref}) => {
   const [modal4, setModal4] = useState(false);
   const [modal6, setModal6] = useState(false);
   const [modal11, setModal11] = useState(false);
+  const [modal13, setModal13] = useState(false);
+  const [modal15, setModal15] = useState(false);
+  const [modal14, setModal14] = useState(false);
+  const [modal16, setModal16] = useState(false);
+
+
+  useEffect(() => {
+    if (modal4|| modal6|| modal11|| modal13|| modal15|| modal4|| modal16) {
+      document.body.style.overflow='hidden';
+    } else {
+      document.body.style.overflow='visible';
+    }
+    
+    // Cleanup when the component is unmounted or modal16 changes
+    return () => {
+      document.body.style.overflow='visible';
+    };
+  }, [modal4, modal6, modal11, modal13, modal15, modal4, modal16]);
 
 
 
@@ -113,7 +131,9 @@ const Product = ({ product_ref}) => {
               </div>
             </div>
 
-            <div className='products' onMouseEnter={e => { setStyle13({display: 'flex'}); }}onMouseLeave={e => { setStyle13({display: 'none'})}}>
+            <div className='products' onMouseEnter={e => { setStyle13({display: 'flex'}); }}onMouseLeave={e => { setStyle13({display: 'none'})}}
+              onClick={()=> setModal13(true)}  
+            >
               <img src={thirteen}/>
               <div className='producthover' style={style13}>
                 <div>
@@ -122,7 +142,9 @@ const Product = ({ product_ref}) => {
               </div>
             </div>
 
-            <div className='products' onMouseEnter={e => { setStyle15({display: 'flex'}); }}onMouseLeave={e => { setStyle15({display: 'none'})}}>
+            <div className='products' onMouseEnter={e => { setStyle15({display: 'flex'}); }}onMouseLeave={e => { setStyle15({display: 'none'})}}
+              onClick={()=> setModal15(true)}  
+            >
               <img src={fifteen}/>
               <div className='producthover' style={style15}>
                 <div>
@@ -192,7 +214,9 @@ const Product = ({ product_ref}) => {
               </div>
             </div>
 
-            <div className='products' onMouseEnter={e => { setStyle14({display: 'flex'}); }}onMouseLeave={e => { setStyle14({display: 'none'})}}>
+            <div className='products' onMouseEnter={e => { setStyle14({display: 'flex'}); }}onMouseLeave={e => { setStyle14({display: 'none'})}}
+              onClick={()=> setModal14(true)}  
+            >
               <img src={fourteen}/>
               <div className='producthover' style={style14}>
                 <div>
@@ -201,7 +225,9 @@ const Product = ({ product_ref}) => {
               </div>
             </div>
 
-            <div className='products' onMouseEnter={e => { setStyle16({display: 'flex'}); }}onMouseLeave={e => { setStyle16({display: 'none'})}}>
+            <div className='products' onMouseEnter={e => { setStyle16({display: 'flex'}); }}onMouseLeave={e => { setStyle16({display: 'none'})}}
+              onClick={()=> setModal16(true)}  
+            >
               <img src={sixteen}/>
               <div className='producthover' style={style16}>
                 <div>
@@ -218,7 +244,12 @@ const Product = ({ product_ref}) => {
 
     {modal4?
 
-      <div className='ModalContainer'>
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal4(false);
+        }
+      }}>
         <div className='ModalParent'>
           <div className='modalHead'>
             <div>LC Detuned Filter Circuit</div>
@@ -279,7 +310,12 @@ const Product = ({ product_ref}) => {
 
     {modal6?
 
-      <div className='ModalContainer'>
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal6(false);
+        }
+      }}>
         <div className='ModalParent'>
           <div className='modalHead'>
             <div>ISOLATION TRANSFORMER</div>
@@ -396,7 +432,12 @@ const Product = ({ product_ref}) => {
 
     {modal11?
 
-      <div className='ModalContainer'>
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal11(false);
+        }
+      }}>
         <div className='ModalParent'>
           <div className='modalHead'>
             <div>AC Stabilizer</div>
@@ -518,6 +559,264 @@ const Product = ({ product_ref}) => {
             <div className='data'>3 Years</div>
             <div className='data'>3 Years</div>
 
+          </div>
+        </div>
+      </div>
+
+    : null}
+
+
+    {modal13?
+
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal13(false);
+        }
+      }}>
+        <div className='ModalParent'>
+          <div className='modalHead'>
+            <div>Mains Stabilizer</div>
+            <div className='closeModal'
+              onClick={()=> setModal13(false)}>
+              X
+            </div>
+          </div>
+
+          <div className='Modal four'>
+
+            <div className='specs model'>Specifications</div>
+            <div className='model'>bel-MS-3090</div>
+            <div className='model'>bel-MS-5090</div>
+
+            <div className='specs'>Application</div>
+            <div className='data'>Mains- 3KVA - 230V, 50Hz</div>
+            <div className='data'>Mains- 5KVA - 230V, 50Hz</div>
+
+            <div className='specs'>Working Range</div>
+            <div className='data'>90V - 290V AC, 1PH. 50Hz</div>
+            <div className='data'>90V - 290V AC, 1PH. 50Hz</div>
+
+            <div className='specs'>Output Voltage</div>
+            <div className='data'>Stabilized</div>
+            <div className='data'>Stabilized</div>
+            
+            <div className='specs'>Time Delay</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            
+            <div className='specs'>Advance Digital Display</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            <div className='data'>Provided (SSD- Seven Segment Display)</div>
+            
+            <div className='specs'>Low Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if below 90V</div>
+            <div className='data'>Provided, for Mains Supply if below 90V</div>
+            
+            <div className='specs'>High Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+            <div className='data'>Provided, for Mains Supply if above 290V</div>
+
+            <div className='specs'>Overload Protection</div>
+            <div className='data'>Available through separate MCB's</div>
+            <div className='data'>Available through separate MCB's</div>
+            
+            <div className='specs'>Auto Start Facility</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+            
+            <div className='specs'>Warranty</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            
+          </div>
+        </div>
+      </div>
+
+    : null}
+
+
+    {modal15?
+
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal15(false);
+        }
+      }}>
+        <div className='ModalParent'>
+          <div className='modalHead'>
+            <div>CVT Stabilizer</div>
+            <div className='closeModal'
+              onClick={()=> setModal15(false)}>
+              X
+            </div>
+          </div>
+
+          <div className='Modal fifteen'>
+
+            <div className='specs model'>Specifications</div>
+            <div className='model'>CVT-250 VA</div>
+            <div className='model'>CVT-500 VA</div>
+
+            <div className='specs'>Applications</div>
+            <div className='data'>One LED TV upto 55" Panel + DTH/ Home Theatre/ Music System</div>
+            <div className='data'>One LED TV upto 75" Panel + DTH/ Home Theatre/ Music System</div>
+
+            <div className='specs'>Input Working Range</div>
+            <div className='data'>110V - 285V AC, 1PH. 50Hz</div>
+            <div className='data'>110V - 285V AC, 1PH. 50Hz</div>
+
+            <div className='specs'>Output Voltage</div>
+            <div className='data'>Stabilized & Sine Wave Shape</div>
+            <div className='data'>Stabilized & Sine Wave Shape</div>
+            
+            <div className='specs'>Offers</div>
+            <div className='data'>Pure Sine Wave Regulated Output Voltage Irrespective of Input Wave Shape (Sine Or Square Wave)</div>
+            <div className='data'>Pure Sine Wave Regulated Output Voltage Irrespective of Input Wave Shape (Sine Or Square Wave)</div>
+            
+            <div className='specs'>Output Voltage Correction</div>
+            <div className='data'>Instantaneous within 30 milliseconds</div>
+            <div className='data'>Instantaneous within 30 milliseconds</div>
+            
+            <div className='specs'>Protects Against</div>
+            <div className='data'>Spikes/ Surges/ Transients/ Sags/ Brown Outs Conditions</div>
+            <div className='data'>Spikes/ Surges/ Transients/ Sags/ Brown Outs Conditions</div>
+            
+            <div className='specs'>Inherently Protected Against</div>
+            <div className='data'>Short Circuiting of Output</div>
+            <div className='data'>Short Circuiting of Output</div>
+
+            <div className='specs'>Achieves</div>
+            <div className='data'>Zero Voltage at Output Between Neutral & Earth</div>
+            <div className='data'>Zero Voltage at Output Between Neutral & Earth</div>
+            
+            <div className='specs'>Protection on Input</div>
+            <div className='data'>Provided through Glass Cartridge Fuse (Slow Blow)</div>
+            <div className='data'>Provided through Glass Cartridge Fuse (Slow Blow)</div>
+            
+            <div className='specs'>Warranty</div>
+            <div className='data'>3 Years</div>
+            <div className='data'>3 Years</div>
+            
+          </div>
+        </div>
+      </div>
+
+    : null}
+
+
+    {modal14?
+
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal14(false);
+        }
+      }}>
+        <div className='ModalParent'>
+          <div className='modalHead'>
+            <div>Refrigerator Stabilizer</div>
+            <div className='closeModal'
+              onClick={()=> setModal14(false)}>
+              X
+            </div>
+          </div>
+
+          <div className='Modal fourteen'>
+
+            <div className='specs model'>Specifications</div>
+            <div className='model'>bel-FR-1504</div>
+
+            <div className='specs'>Application</div>
+            <div className='data'>One Refrigerator (Up to 680 Litre/ 4 Amp. Capacity)</div>
+
+            <div className='specs'>Working Range</div>
+            <div className='data'>150V - 285V AC, 1PH. 50Hz</div>
+
+            <div className='specs'>Output Voltage</div>
+            <div className='data'>Stabilized</div>
+
+            <div className='specs'>Time Delay</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            
+            <div className='specs'>Advance Digital Display</div>
+            <div className='data'>L.E.D - 2 No.s (1 for Mains, 1 for Output)</div>
+            
+            <div className='specs'>Low Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if below 150V (LED Output glow Red)</div>
+            
+            <div className='specs'>High Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if above 285V (LED Output glow Red)</div>
+            
+            <div className='specs'>Auto Start Facility</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+
+            <div className='specs'>Mounting</div>
+            <div className='data'>Table/ Platform</div>
+            
+            <div className='specs'>Warranty</div>
+            <div className='data'>3 Years</div>
+            
+          </div>
+        </div>
+      </div>
+
+    : null}
+
+
+    {modal16?
+
+      <div className='ModalContainer'
+      onClick={(e) => {
+        if (e.target.className === 'ModalContainer') {
+          setModal16(false);
+        }
+      }}>
+        <div className='ModalParent'>
+          <div className='modalHead'>
+            <div>Electronic Voltage Stabilizer</div>
+            <div className='closeModal'
+              onClick={()=> setModal16(false)}>
+              X
+            </div>
+          </div>
+
+          <div className='Modal fourteen'>
+
+            <div className='specs model'>Specifications</div>
+            <div className='model'>VENUS</div>
+
+            <div className='specs'>Application</div>
+            <div className='data'>One LED TV upto 65" Panel + DTH/ LED Lighting/ Music Systems/ Home Theatres (Max. 3 Amp.) </div>
+
+            <div className='specs'>Input Working Range</div>
+            <div className='data'>11V - 290V AC, 1PH. 50Hz</div>
+
+            <div className='specs'>Output Voltage</div>
+            <div className='data'>Stabilized</div>
+
+            <div className='specs'>Time Delay</div>
+            <div className='data'>5 Secs ITDS Provided</div>
+            
+            <div className='specs'>Advance Digital Display</div>
+            <div className='data'>L.E.D - 2 No.s (1 for Mains, 1 for Output)</div>
+            
+            <div className='specs'>Low Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if below 90V (LED Output glow Red)</div>
+            
+            <div className='specs'>High Cut Off Protection</div>
+            <div className='data'>Provided, for Mains Supply if above 290V (LED Output glow Red)</div>
+            
+            <div className='specs'>Auto Start Facility</div>
+            <div className='data'>Starts Automatically when Mains is sensed within designed Input Voltage Range</div>
+
+            <div className='specs'>Wall Mounting</div>
+            <div className='data'>Yes</div>
+            
+            <div className='specs'>Warranty</div>
+            <div className='data'>3 Years</div>
+            
           </div>
         </div>
       </div>
