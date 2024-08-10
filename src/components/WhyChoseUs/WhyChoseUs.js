@@ -1,9 +1,11 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './WhyChoseUs.css' 
 import plant from '../../assets/plant.png'
+import plantblur from '../../assets/lazy/plant.png'
 import Line from '../Line/Line'
 
 const WhyChoseUs = () => {
+
   return (
     <div className='WhyChoseUs'>
         <div className='subheading'>
@@ -14,7 +16,9 @@ const WhyChoseUs = () => {
         </div>
 <Line/>
         <div className='WhyChoseUs_content'>
-            <div className='plant_div'><img className='plant' src={plant} /></div>
+            <div className='plant_div blur-load' style={{backgroundImage:`url(${plantblur})`}}>
+              <img className='plant' src={plant} loading='lazy'/>
+            </div>
             <div className='why_chose_us_text'>
             The exemplary legacy of Bhurji Electronics has had the privilege of introducing various technologies to the Transformer Industry in India. The revolutionary adoption of the industrial best practices we have adopted ISO:9001 – 2015 to ensure the development of best-in-class products driven by quality and innovation.
              <br /><br />

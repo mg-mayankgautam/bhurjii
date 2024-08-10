@@ -21,10 +21,34 @@ function App() {
   const clients_ref = useRef(null);
   const Footer_ref = useRef(null);
 
-  useEffect(()=>{
-    console.log(Landing_ref)
 
-  },[Landing_ref])
+  useEffect(() => {
+    const blurredImageDivs = document.querySelectorAll(".blur-load");
+    
+    blurredImageDivs.forEach((div) => {
+      const img = div.querySelector("img");
+
+      const loaded = () => {
+        div.classList.add("loaded");
+      };
+
+      if (img.complete) {
+        loaded();
+      } else {
+        img.addEventListener("load", loaded);
+      }
+    });
+
+    return () => {
+      blurredImageDivs.forEach((div) => {
+        const img = div.querySelector("img");
+        img.removeEventListener("load", () => {
+          div.classList.add("loaded");
+        });
+      });
+    };
+  }, []);
+  
 
   return (
     <div className="App">

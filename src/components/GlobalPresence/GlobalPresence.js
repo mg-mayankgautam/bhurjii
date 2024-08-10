@@ -1,6 +1,7 @@
 import React from 'react'
 import './GlobalPresence.css'
 import map from '../../assets/map.png'
+import mapblur from '../../assets/lazy/map.png'
 import Line from '../Line/Line'
 
 const GlobalPresence = () => {
@@ -14,7 +15,9 @@ const GlobalPresence = () => {
       <div className='heading'>Global Presence</div>
       <Line/>
 
-      <div className='mapDiv'><img className='map' src={map} alt="" /></div>
+      <div className='mapDiv blur-load' style={{backgroundImage:`url(${mapblur})`}}>
+        <img className='map' src={map}  loading='lazy'/>
+      </div>
     </div>
   )
 }

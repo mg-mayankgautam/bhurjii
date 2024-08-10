@@ -1,6 +1,7 @@
 import React from 'react'
 import './Landing.css'
 import home from '../../assets/homebg.png'
+import homeblur from '../../assets/lazy/homebg.png'
 import { FaLongArrowAltRight } from "react-icons/fa";
 
 const Landing = ({Landing_ref,product_ref}) => {
@@ -8,8 +9,9 @@ const Landing = ({Landing_ref,product_ref}) => {
     <div className='Landing' ref={Landing_ref}>
         <div className='landingBg'>
             <div className='bgColor'></div>
-            <div className='bgImgDiv'>
-            <img src={home} className='bgImg'/></div>
+            <div className='bgImgDiv blur-load' style={{backgroundImage:`url(${homeblur})`}}>
+              <img src={home} className='bgImg' loading='lazy' />
+            </div>
         </div>
         <div className='landinghead2'>BHURJI</div>
         <div className='landinghead1'>ELECTRONICS LLP.</div>

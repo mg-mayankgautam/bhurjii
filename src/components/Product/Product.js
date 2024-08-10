@@ -17,6 +17,23 @@ import fourteen from '../../assets/14-Refrigerator Stabilizer.png'
 import fifteen from '../../assets/15-CVT Stabilizer.png'
 import sixteen from '../../assets/16-Electric Voltage Stabilizer.png'
 import Line from '../Line/Line'
+import oneblur from '../../assets/lazy/1-customized-transformer.png';
+import twoblur from '../../assets/lazy/2-power-transformer.png'
+import threeblur from '../../assets/lazy/3-3phase-CVT.png'
+import fourblur from '../../assets/lazy/4-detuned-reactor.png'
+import fiveblur from '../../assets/lazy/5-1 phx Constant Voltage Transformer.png'
+import sixblur from '../../assets/lazy/6-Isolation Transformer.png'
+import sevenblur from '../../assets/lazy/7-1 phx Choke.png'
+import eightblur from '../../assets/lazy/1 phx inverter transformer.png'
+import nineblur from '../../assets/lazy/9-CVT Transformer.png'
+import tenblur from '../../assets/lazy/10-3 phx Inverter Transformer.png'
+import elevenblur from '../../assets/lazy/11-AC Stabilizer.png'
+import twelveblur from '../../assets/lazy/12-Zig-Zag Transformer.png'
+import thirteenblur from '../../assets/lazy/13-Mains Stabilizer.png'
+import fourteenblur from '../../assets/lazy/14-Refrigerator Stabilizer.png'
+import fifteenblur from '../../assets/lazy/15-CVT Stabilizer.png'
+import sixteenblur from '../../assets/lazy/16-Electric Voltage Stabilizer.png'
+
 
 const Product = ({ product_ref}) => {
 
@@ -60,7 +77,6 @@ const Product = ({ product_ref}) => {
   }, [modal4, modal6, modal11, modal13, modal15, modal4, modal16]);
 
 
-
   return (
     <>
 
@@ -73,7 +89,9 @@ const Product = ({ product_ref}) => {
           <div className='OddProductsGrid'>
 
             <div className='products' onMouseEnter={e => { setStyle({display: 'flex'}); }}onMouseLeave={e => { setStyle({display: 'none'})}}>
-              <img src={one}/>
+              <div className='blur-load' style={{backgroundImage:`url(${oneblur})`}}>
+                <img src={one} loading='lazy'/>
+              </div>
               <div className='producthover' style={style}>
                 <div> 
               <span className='bold'>Customized Transformer </span><br /> (Used in Delhi, Kolkata and Bangalore Metro)</div>
@@ -81,7 +99,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div  className='products' onMouseEnter={e => { setStyle3({display: 'flex'}); }}onMouseLeave={e => { setStyle3({display: 'none'})}}>
-              <img src={three}/>
+              <div className='blur-load' style={{backgroundImage:`url(${threeblur})`}}>
+                <img src={three}/>
+              </div>
               <div className='producthover' style={style3}>
                 <div>
                 <span className='bold'>3 Phase Constant Voltage Transformer </span>
@@ -90,7 +110,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div className='products' onMouseEnter={e => { setStyle5({display: 'flex'}); }}onMouseLeave={e => { setStyle5({display: 'none'})}}>
-              <img src={five}/>
+              <div className='blur-load' style={{backgroundImage:`url(${fiveblur})`}}>
+                <img src={five}/>
+              </div>
               <div className='producthover' style={style5}>
                 <div>
                 <span className='bold'>1 Phase Constant Voltage Transformer </span>
@@ -99,7 +121,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div className='products' onMouseEnter={e => { setStyle7({display: 'flex'}); }}onMouseLeave={e => { setStyle7({display: 'none'})}}>
-              <img src={seven}/>
+              <div className='blur-load' style={{backgroundImage:`url(${sevenblur})`}}>
+                <img src={seven}/>
+              </div>
               <div className='producthover' style={style7}>
                 <div className='bold'>
                 1 Phase Choke
@@ -108,7 +132,9 @@ const Product = ({ product_ref}) => {
             </div>
             
             <div className='products' onMouseEnter={e => { setStyle9({display: 'flex'}); }}onMouseLeave={e => { setStyle9({display: 'none'})}}>
-              <img src={nine}/>
+              <div className='blur-load' style={{backgroundImage:`url(${nineblur})`}}>
+                <img src={nine}/>
+              </div>
               <div className='producthover' style={style9}>
                 <div>
                   <span className='bold'>Constant Voltage Transformer</span>
@@ -120,7 +146,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle11({display: 'flex'}); }}onMouseLeave={e => { setStyle11({display: 'none'})}}
               onClick={()=> setModal11(true)}  
             >
-              <img src={eleven}/>
+              <div className='blur-load' style={{backgroundImage:`url(${elevenblur})`}}>
+                <img src={eleven}/>
+              </div>
               <div className='producthover' style={style11}>
                 <div>
                 <span className='bold'>AC Stabilizer</span><br/>
@@ -134,7 +162,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle13({display: 'flex'}); }}onMouseLeave={e => { setStyle13({display: 'none'})}}
               onClick={()=> setModal13(true)}  
             >
-              <img src={thirteen}/>
+              <div className='blur-load' style={{backgroundImage:`url(${thirteenblur})`}}>
+                <img src={thirteen}/>
+              </div>
               <div className='producthover' style={style13}>
                 <div>
                 <span className='bold'>Mains Stabilizer</span>
@@ -145,7 +175,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle15({display: 'flex'}); }}onMouseLeave={e => { setStyle15({display: 'none'})}}
               onClick={()=> setModal15(true)}  
             >
-              <img src={fifteen}/>
+              <div className='blur-load' style={{backgroundImage:`url(${fifteenblur})`}}>
+                <img src={fifteen}/>
+              </div>
               <div className='producthover' style={style15}>
                 <div>
                 <span className='bold'>CVT Stabilizer</span><br/> For LED TVs upto 55" Panel & 75" Panel/ Home Theater/ Music System/ Petrol Pump Station
@@ -157,7 +189,9 @@ const Product = ({ product_ref}) => {
           <div className='EvenProductsGrid'>
 
             <div className='products'onMouseEnter={e => { setStyle2({display: 'flex'}); }}onMouseLeave={e => { setStyle2({display: 'none'})}}>
-              <img src={two}/>
+              <div className='blur-load' style={{backgroundImage:`url(${twoblur})`}}>
+                <img src={two}/>
+              </div>
               <div className='producthover' style={style2}>
                 <div className='bold'>
                 Power Transformer
@@ -168,7 +202,9 @@ const Product = ({ product_ref}) => {
             <div  className='products' onMouseEnter={e => { setStyle4({display: 'flex'}); }}onMouseLeave={e => { setStyle4({display: 'none'})}}
               onClick={()=> setModal4(true)}
             >
-              <img src={four}/>
+              <div className='blur-load' style={{backgroundImage:`url(${fourblur})`}}>
+                <img src={four}/>
+              </div>
               <div className='producthover' style={style4}>
                 <div className='bold'>
                   Detuned Reactor
@@ -179,7 +215,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle6({display: 'flex'}); }}onMouseLeave={e => { setStyle6({display: 'none'})}}
               onClick={()=> setModal6(true)}
             >
-              <img src={six}/>
+              <div className='blur-load' style={{backgroundImage:`url(${sixblur})`}}>
+                <img src={six}/>
+              </div>
               <div className='producthover' style={style6}>
                 <div>
                 <span className='bold'>Isolation Transformer </span>
@@ -188,7 +226,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div className='products' onMouseEnter={e => { setStyle8({display: 'flex'}); }}onMouseLeave={e => { setStyle8({display: 'none'})}}>
-              <img src={eight}/>
+              <div className='blur-load' style={{backgroundImage:`url(${eightblur})`}}>
+                <img src={eight}/>
+              </div>
               <div className='producthover' style={style8}>
                 <div>
                 <span className='bold'>1 Phase Inverter Transformer </span>
@@ -197,7 +237,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div className='products' onMouseEnter={e => { setStyle10({display: 'flex'}); }}onMouseLeave={e => { setStyle10({display: 'none'})}}>
-              <img src={ten}/>
+              <div className='blur-load' style={{backgroundImage:`url(${tenblur})`}}>
+                <img src={ten}/>
+              </div>
               <div className='producthover' style={style10}>
                 <div>
                 <span className='bold'>3 Phase Inverter Transformer </span>
@@ -206,7 +248,9 @@ const Product = ({ product_ref}) => {
             </div>
 
             <div className='products' onMouseEnter={e => { setStyle12({display: 'flex'}); }}onMouseLeave={e => { setStyle12({display: 'none'})}}>
-              <img src={twelve}/>
+              <div className='blur-load' style={{backgroundImage:`url(${twelveblur})`}}>
+                <img src={twelve}/>
+              </div>
               <div className='producthover' style={style12}>
                 <div className='bold'>
                 3 Phase Zig - Zag Transformer
@@ -217,7 +261,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle14({display: 'flex'}); }}onMouseLeave={e => { setStyle14({display: 'none'})}}
               onClick={()=> setModal14(true)}  
             >
-              <img src={fourteen}/>
+              <div className='blur-load' style={{backgroundImage:`url(${fourteenblur})`}}>
+                <img src={fourteen}/>
+              </div>
               <div className='producthover' style={style14}>
                 <div>
                 <span className='bold'>Refrigerator Stabilizer</span>
@@ -228,7 +274,9 @@ const Product = ({ product_ref}) => {
             <div className='products' onMouseEnter={e => { setStyle16({display: 'flex'}); }}onMouseLeave={e => { setStyle16({display: 'none'})}}
               onClick={()=> setModal16(true)}  
             >
-              <img src={sixteen}/>
+              <div className='blur-load' style={{backgroundImage:`url(${sixteenblur})`}}>
+                <img src={sixteen}/>
+              </div>
               <div className='producthover' style={style16}>
                 <div>
                 <span className='bold'>Electronic Voltage Stabilizer </span><br/> For LED TVs upto 65" + DTH / LED Lighting/ Music Systems/ Home Theater

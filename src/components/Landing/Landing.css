@@ -22,13 +22,18 @@
 .bgImgDiv{
     height: 100vh;
 }
-.bgImg{
+.blur-load>.bgImg{
     object-fit: cover;
     height: 100%;
     width: 100%;
-    /* object-position: right; */
-    opacity: 50%;
+    opacity: 0;
+    transition: opacity 250ms ease-in-out;    
 }
+  
+.blur-load.loaded>.bgImg {
+    opacity: 0.5;
+  }
+
 .landinghead1{
     font-size: 48px;
     margin: 0 40px;
@@ -91,7 +96,7 @@
     .bgColor{display: none;}
        
     .bgImg{
-        opacity: 30%;
+        opacity: 0.3 !important;
     }
     
 }
