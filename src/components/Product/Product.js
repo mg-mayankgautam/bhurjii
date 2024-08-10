@@ -64,7 +64,7 @@ const Product = ({ product_ref}) => {
 
 
   useEffect(() => {
-    if (modal4|| modal6|| modal11|| modal13|| modal15|| modal4|| modal16) {
+    if (modal4|| modal6|| modal11|| modal13|| modal15|| modal14|| modal16) {
       document.body.style.overflow='hidden';
     } else {
       document.body.style.overflow='visible';
