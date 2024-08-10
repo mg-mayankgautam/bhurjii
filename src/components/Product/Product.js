@@ -74,7 +74,7 @@ const Product = ({ product_ref}) => {
     return () => {
       document.body.style.overflow='visible';
     };
-  }, [modal4, modal6, modal11, modal13, modal15, modal4, modal16]);
+  }, [modal4, modal6, modal11, modal13, modal15, modal14, modal16]);
 
 
   return (
