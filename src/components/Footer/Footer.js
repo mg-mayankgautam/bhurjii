@@ -27,20 +27,20 @@ const Footer = ({Footer_ref,Landing_ref,
                 <div className='footer_icons'><IoMdMail /></div>
                 <div className='footer_text'>sales@bhurjitransformers.com</div>
                 <div className='footer_icons'><FaLocationDot /></div>
-                <div className='footer_text'>Plot No. 107, Udyog Vihar, Phase - 1, Dundahera, <br/> Gurugram - 124103, Haryana</div>
+                <div className='footer_text'>Plot No. P12, Street No 12, Sector - 3, METL, <br/> Dadri Toye - 124103, Haryana</div>
            
             </div>
 
         
             <div className='vr vr_right'></div>
             <div className='location_image_div'>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.081204171609!2d77.0817106!3d28.5165578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d195fa5665313%3A0x63fe61d7a93d40b9!2sBHURJI%20ELECTRONIKS%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1712923256402!5m2!1sen!2sin" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5660876662573!2d76.7480604!3d28.522699900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d6de6c2062fb1%3A0x818ba48fef0f091c!2sBhurji%20Electronics!5e0!3m2!1sen!2sin!4v1756660654495!5m2!1sen!2sin" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
         </div>
 
         <div className='location_image_div_mobile'>
           <div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14023.081204171609!2d77.0817106!3d28.5165578!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d195fa5665313%3A0x63fe61d7a93d40b9!2sBHURJI%20ELECTRONIKS%20PVT.%20LTD.!5e0!3m2!1sen!2sin!4v1712923256402!5m2!1sen!2sin" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.5660876662573!2d76.7480604!3d28.522699900000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d6de6c2062fb1%3A0x818ba48fef0f091c!2sBhurji%20Electronics!5e0!3m2!1sen!2sin!4v1756660654495!5m2!1sen!2sin" width="300" height="200" style={{border:0}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
               </div>
         </div>
 
